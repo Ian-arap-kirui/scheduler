@@ -1,0 +1,6 @@
+.calendly-badge-widget {
+    position: fixed !important;
+    right: 44% !important;
+    bottom: 35% !important;
+    z-index: 9998 !important;
+}
