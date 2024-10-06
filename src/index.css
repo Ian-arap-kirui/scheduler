@@ -1,6 +1,119 @@
 .calendly-badge-widget {
-    position: fixed !important;
-    right: 44% !important;
-    bottom: 35% !important;
-    z-index: 9998 !important;
+  position: absolute !important;
+  right: 44% !important;
+  bottom: 20% !important;
+  z-index: 9998 !important;
+}
+
+h1,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* Media query for screens between 320px and 425px width */
+@media (max-width: 425px) {
+  body {
+    font-size: 14px; /* Adjust the base font size */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Adjust header size */
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem; /* Smaller paragraph text */
+  }
+
+  .calendly-badge-widget {
+    right: 25% !important; /* Adjust badge placement for smaller screens */
+    bottom: 10% !important;
+  }
+
+  /* Make container width responsive */
+  .container {
+    padding: 10px;
+  }
+
+  /* Adjust the process steps layout */
+  .process-steps {
+    flex-direction: column; /* Stack steps vertically */
+    align-items: center;
+  }
+
+  .step {
+    max-width: 100%; /* Make steps full width */
+    margin-bottom: 20px;
+  }
+
+  .schedule-button {
+    width: 100%; /* Full-width button for smaller screens */
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .calendly-badge-widget {
+    right: 20% !important; /* Adjust badge placement for smaller screens */
+    bottom: 10% !important;
+  }
+}@media (min-width: 300px) and (max-width: 345px) {
+    .calendly-badge-widget {
+      right: 20% !important; /* Adjust badge placement for smaller screens */
+      bottom: 5% !important;
+    }
+  }
+/* Media query for screens between 425px and 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Increase the base font size */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust header size */
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem; /* Slightly larger paragraph text */
+  }
+
+  .calendly-badge-widget {
+    right: 35% !important; /* Adjust badge placement */
+    bottom: 20% !important;
+  }
+
+  /* Make container slightly wider */
+  .container {
+    max-width: 90%; /* Utilize more screen space */
+    padding: 15px;
+  }
+
+  /* Adjust the process steps layout */
+  .process-steps {
+    flex-direction: row; /* Show steps in a row for larger screens */
+    justify-content: space-between;
+  }
+
+  .step {
+    max-width: 45%; /* Allow more space for each step */
+    margin-bottom: 20px;
+  }
+
+  .schedule-button {
+    width: 50%; /* Make the button wider for tablets */
+    font-size: 1rem;
+  }
 }
