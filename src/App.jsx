@@ -1,8 +1,8 @@
 // src/App.jsx
 
-import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import CalendlyBadge from './components/CalendlyBadge';
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import CalendlyBadge from "./components/CalendlyBadge";
 
 // Global styles
 const GlobalStyle = createGlobalStyle`
@@ -82,24 +82,34 @@ function App() {
       <Container>
         <Header>Schedule Your Appointment</Header>
         <Description>
-          Please select a date and time that works for you, and I will help you apply for the DV program.
+          Please select a date and time that works for you, and I will help you
+          apply for the DV program.
         </Description>
 
         <ProcessSteps>
           <Step>
             <StepIcon>📅</StepIcon>
             <StepTitle>Step 1</StepTitle>
-            <StepDescription>Book your application appointment.</StepDescription>
+            <StepDescription>
+              Book your application appointment.
+            </StepDescription>
           </Step>
           <Step>
             <StepIcon>📸</StepIcon>
             <StepTitle>Step 2</StepTitle>
-            <StepDescription>Take a passport photo at the studio.</StepDescription>
+            <StepDescription>
+              Take a passport photo at the studio.
+            </StepDescription>
           </Step>
           <Step>
             <StepIcon>📄</StepIcon>
             <StepTitle>Step 3</StepTitle>
-            <StepDescription>Upload info and attach passport photo at the  <a href="https://dvprogram.state.gov/" target='_blank'>official dv webiste.</a> </StepDescription>
+            <StepDescription>
+              Upload info and attach passport photo at the{" "}
+              <a href="https://dvprogram.state.gov/" target="_blank">
+                official dv webiste.
+              </a>{" "}
+            </StepDescription>
           </Step>
         </ProcessSteps>
 
