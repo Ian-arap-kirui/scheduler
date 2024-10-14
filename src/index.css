@@ -20,6 +20,7 @@ p {
 @media (max-width: 425px) {
   body {
     font-size: 14px; /* Adjust the base font size */
+    height: 100dvh;
   }
 
   h1 {
@@ -75,7 +76,7 @@ p {
 /* Media query for screens between 425px and 768px */
 @media (min-width: 426px) and (max-width: 768px) {
   body {
-    font-size: 16px; /* Increase the base font size */
+    font-size: 16px; /* Increase the base font size */    height: 100dvh;
   }
 
   h1 {
@@ -92,7 +93,7 @@ p {
 
   .calendly-badge-widget {
     right: 25.5% !important; /* Adjust badge placement */
-    bottom: 15% !important;
+    bottom: 10% !important;
   }
 
   /* Make container slightly wider */
