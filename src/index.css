@@ -4,7 +4,12 @@
   bottom: 20% !important;
   z-index: 9998 !important;
 }
-
+body {
+  height: 100dvh;
+}
+#root {
+  height: 100%;
+}
 h1,
 h3 {
   font-family: "Poppins", sans-serif;
@@ -20,7 +25,6 @@ p {
 @media (max-width: 425px) {
   body {
     font-size: 14px; /* Adjust the base font size */
-    height: 100dvh;
   }
 
   h1 {
@@ -67,16 +71,18 @@ p {
     right: 20% !important; /* Adjust badge placement for smaller screens */
     bottom: 10% !important;
   }
-}@media (min-width: 300px) and (max-width: 345px) {
-    .calendly-badge-widget {
-      right: 20% !important; /* Adjust badge placement for smaller screens */
-      bottom: 5% !important;
-    }
+}
+@media (min-width: 300px) and (max-width: 345px) {
+  .calendly-badge-widget {
+    right: 20% !important; /* Adjust badge placement for smaller screens */
+    bottom: 5% !important;
   }
+}
 /* Media query for screens between 425px and 768px */
 @media (min-width: 426px) and (max-width: 768px) {
   body {
-    font-size: 16px; /* Increase the base font size */    height: 100dvh;
+    font-size: 16px; /* Increase the base font size */
+    /* height: 100dvh; */
   }
 
   h1 {
